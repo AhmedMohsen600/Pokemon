@@ -37,14 +37,14 @@ export default function PaginationList() {
   return (
     <>
       {isLoading ? (
-        <div className="grid grid-cols-1 justify-items-center gap-3 px-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+        <div className="grid grid-cols-1 justify-items-center gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
           {Array.from({ length: POKEMON_PER_PAGE }).map((_, index) => (
             <PokemonCardSkeleton key={index} />
           ))}
         </div>
       ) : (
         <>
-          <div className="grid grid-cols-1 justify-items-center gap-5 px-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+          <div className="grid grid-cols-1 justify-items-center gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
             {data?.pokemonList.map((pokemon) => (
               <PokemonCard key={pokemon.id} pokemon={pokemon} />
             ))}
