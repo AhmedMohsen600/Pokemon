@@ -1,6 +1,6 @@
-# 🚀 Pokémon Browser
+# 🚀 Pokémon
 
-A modern, responsive Pokémon browser application built with React 18, TypeScript, and TanStack React Query. Explore the complete Pokédex with two different list views: pagination and infinite scroll.
+A modern, responsive Pokémon application built with React 19, TypeScript, and TanStack React Query. Explore the complete Pokédex with two different list views: pagination and infinite scroll.
 
 ## ✨ Features
 
@@ -16,7 +16,7 @@ A modern, responsive Pokémon browser application built with React 18, TypeScrip
 
 ## 🧪 Tech Stack
 
-- **React 18** - Latest React with concurrent features
+- **React 19** - Latest React with concurrent features
 - **TypeScript** - Type-safe development
 - **Vite** - Fast build tooling and dev server
 - **TanStack React Query v5** - Server state management and caching
