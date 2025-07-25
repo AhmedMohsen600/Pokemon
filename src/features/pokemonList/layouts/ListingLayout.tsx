@@ -52,8 +52,9 @@ function ListingLayout() {
           </Link>
         </div>
       </div>
-
-      <Outlet />
+      <div className="sm:px-4 xl:px-20">
+        <Outlet />
+      </div>
     </div>
   )
 }
