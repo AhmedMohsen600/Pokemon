@@ -65,7 +65,7 @@ src/
 
    ```bash
    git clone https://github.com/AhmedMohsen600/Pokemon.git
-   cd pokemon-browser
+   cd Pokemon
    ```
 
 2. **Install dependencies**
