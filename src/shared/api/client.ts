@@ -1,14 +1,14 @@
 import axios from 'axios'
+import { POKEMON_API_BASE_URL } from '../../constants/pokemonConstants'
 
 export const api = axios.create({
-  baseURL: 'https://pokeapi.co/api/v2',
+  baseURL: POKEMON_API_BASE_URL,
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
   },
 })
 
-// Request interceptor
 api.interceptors.request.use(
   (config) => {
     return config
@@ -18,13 +18,11 @@ api.interceptors.request.use(
   }
 )
 
-// Response interceptor
 api.interceptors.response.use(
   (response) => {
     return response
   },
   (error) => {
-    // Handle common error scenarios
     if (error.response?.status === 404) {
       console.error('Resource not found:', error.response?.data)
     } else if (error.response?.status >= 500) {
