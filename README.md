@@ -64,7 +64,7 @@ src/
 1. **Clone the repository**
 
    ```bash
-   git clone <https://github.com/AhmedMohsen600/Pokemon.git>
+   git clone https://github.com/AhmedMohsen600/Pokemon.git
    cd pokemon-browser
    ```
 
