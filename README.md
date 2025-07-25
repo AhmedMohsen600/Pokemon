@@ -2,6 +2,16 @@
 
 A modern, responsive Pokémon application built with React 19, TypeScript, and TanStack React Query. Explore the complete Pokédex with two different list views: pagination and infinite scroll.
 
+## 🌐 Live Demo
+
+**[🔗 View Live Application](https://pokemon-peach-tau.vercel.app)**
+
+Experience the app with different views:
+
+- [📄 Pagination View](https://pokemon-peach-tau.vercel.app/pagination)
+- [🔄 Load More View](https://pokemon-peach-tau.vercel.app/load-more)
+- [🔍 Pokemon Detail Example](https://pokemon-peach-tau.vercel.app/pokemon/1)
+
 ## ✨ Features
 
 - 📱 **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
