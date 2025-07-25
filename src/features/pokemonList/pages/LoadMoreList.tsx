@@ -36,7 +36,7 @@ export default function LoadMoreList() {
 
   return (
     <>
-      <div className="grid grid-cols-1 justify-items-center gap-5 px-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+      <div className="grid grid-cols-1 justify-items-center gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
         {allPokemon.map((pokemon) => (
           <PokemonCard key={pokemon.id} pokemon={pokemon} />
         ))}
@@ -50,7 +50,7 @@ export default function LoadMoreList() {
 
       {/* Show initial loading state */}
       {isLoading && allPokemon.length === 0 && (
-        <div className="grid grid-cols-1 justify-items-center gap-3 px-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+        <div className="grid grid-cols-1 justify-items-center gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
           {Array.from({ length: POKEMON_PER_PAGE }).map((_, index) => (
             <PokemonCardSkeleton key={index} />
           ))}
