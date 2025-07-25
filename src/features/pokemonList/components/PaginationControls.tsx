@@ -54,26 +54,27 @@ export function PaginationControls({
 
   return (
     <div className="mt-8 flex flex-col items-center gap-4">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1 sm:gap-2">
         {/* Previous page */}
         <Button
           variant="outline"
           onClick={() => onPageChange(currentPage - 1)}
           disabled={!hasPrevious}
-          className="flex items-center gap-1 px-3 py-2"
+          className="flex items-center gap-1 px-2 py-2 text-xs sm:px-3 sm:text-sm"
         >
-          <ChevronLeft className="h-4 w-4" />
-          Previous
+          <ChevronLeft className="h-3 w-3 sm:h-4 sm:w-4" />
+          <span className="hidden sm:inline">Previous</span>
+          <span className="sm:hidden">Prev</span>
         </Button>
 
         {/* Page numbers */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1 sm:gap-2">
           {getVisiblePageNumbers().map((pageNumber, index) => {
             if (pageNumber === '...') {
               return (
                 <span
                   key={`ellipsis-${index}`}
-                  className="px-3 py-2 text-gray-500"
+                  className="px-1 py-2 text-xs text-gray-500 sm:px-3 sm:text-sm"
                 >
                   ...
                 </span>
@@ -87,7 +88,11 @@ export function PaginationControls({
                 variant={page === currentPage ? 'default' : 'outline'}
                 size="icon"
                 onClick={() => onPageChange(page)}
-                className={`h-10 ${page === totalPages ? 'w-[40px]' : 'w-[34px]'}`}
+                className={`h-8 text-xs sm:h-10 sm:text-sm ${
+                  page === totalPages
+                    ? 'w-[32px] sm:w-[40px]'
+                    : 'w-[28px] sm:w-[34px]'
+                }`}
               >
                 {page}
               </Button>
@@ -100,10 +105,11 @@ export function PaginationControls({
           variant="outline"
           onClick={() => onPageChange(currentPage + 1)}
           disabled={!hasNext}
-          className="flex items-center gap-1 px-3 py-2"
+          className="flex items-center gap-1 px-2 py-2 text-xs sm:px-3 sm:text-sm"
         >
-          Next
-          <ChevronRight className="h-4 w-4" />
+          <span className="hidden sm:inline">Next</span>
+          <span className="sm:hidden">Next</span>
+          <ChevronRight className="h-3 w-3 sm:h-4 sm:w-4" />
         </Button>
       </div>
 
