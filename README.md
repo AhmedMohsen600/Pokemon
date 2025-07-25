@@ -213,4 +213,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Built with ❤️ by [Your Name] using modern React patterns and best practices.
+Built with ❤️ by Ahmed using modern React patterns and best practices.
